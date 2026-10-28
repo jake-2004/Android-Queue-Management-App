@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F0FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- App Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎟️ QUEUE MANAGER"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="25dp"
+            android:background="#5946D8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart • Simple • Fast"
+            android:textColor="#6656B9"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <!-- Next Customer Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="10dp"
+            android:background="#D9FBE9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🟢 NEXT CUSTOMER"
+                android:textColor="#08794E"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/txtCurrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No customers waiting"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#145C42"
+                android:gravity="center"
+                android:padding="18dp" />
+
+        </LinearLayout>
+
+        <!-- Customer Form -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ Add New Customer"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#392A91"
+            android:paddingTop="22dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="👤 Customer Name"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:padding="14dp"
+            android:backgroundTint="#5946D8" />
+
+        <EditText
+            android:id="@+id/edtService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🛎️ Service Name"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:padding="14dp"
+            android:backgroundTint="#5946D8" />
+
+        <!-- Generate Token Button -->
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="🎟️ Generate Token"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:backgroundTint="#5946D8"
+            android:layout_marginTop="14dp" />
+
+        <!-- Serve Customer Button -->
+        <Button
+            android:id="@+id/btnServed"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="✅ Serve Next Customer"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#E87532"
+            android:layout_marginTop="8dp" />
+
+        <!-- Waiting Queue -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👥 Waiting Queue"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#392A91"
+            android:paddingTop="25dp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtQueue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No customers waiting"
+            android:textColor="#292746"
+            android:textSize="16sp"
+            android:padding="18dp"
+            android:background="#FFFFFF" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💜 Thank you for visiting!"
+            android:textColor="#5946D8"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="22dp" />
+
+    </LinearLayout>
+
+</ScrollView>
